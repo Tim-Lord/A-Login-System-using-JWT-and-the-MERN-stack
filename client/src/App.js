@@ -1,10 +1,15 @@
 import React from "react";
+import Register from "./components/users/Register";
 import "./App.css";
+
+import AlertState from "./context/alerts/AlertState";
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello World!</h1>
+      <AlertState>
+        <Register />
+      </AlertState>
     </div>
   );
 }
